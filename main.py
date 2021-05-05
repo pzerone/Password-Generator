@@ -49,8 +49,8 @@ while True:
 
 #Password generation
 #Temp_list is set as empty at first and a random list from char_list is stored in it
-#The nested for loop then randomly selects a character from temp_list and stores it on final_pw
-#the outer for loop then loops pw_length times which results in final_pw cotaining the required characters
+#Then randomly selects a character from temp_list and stores it on final_pw
+#the for_loop then loops pw_length times which results in final_pw cotaining the required characters
 
         final_pw = ""
         for i in range(pw_len):
@@ -58,10 +58,8 @@ while True:
             temp_list = []
 
             temp_list = random.choice(char_list)
-            
-            for j in range(1):
 
-                final_pw = final_pw+random.choice(temp_list)
+            final_pw = final_pw+random.choice(temp_list)
 
         print("Here is your password:",final_pw)
         
