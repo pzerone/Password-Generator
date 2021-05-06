@@ -7,7 +7,7 @@ import random
 low_list = list(string.ascii_lowercase)
 upp_list = list(string.ascii_uppercase)
 num_list = list(string.digits)
-symb_list = list(string.punctuation)
+symb_list = list('!@#$%^&*')
 
 
 #gets parameters from user and handles password length errors
@@ -48,9 +48,6 @@ while True:
 
 
 #Password generation
-#Temp_list is set as empty at first and a random list from char_list is stored in it
-#Then randomly selects a character from temp_list and stores it on final_pw
-#the for_loop then loops pw_length times which results in final_pw cotaining the required characters
 
         final_pw = ""
         for i in range(pw_len):
@@ -58,7 +55,7 @@ while True:
             temp_list = []
 
             temp_list = random.choice(char_list)
-
+            
             final_pw = final_pw+random.choice(temp_list)
 
         print("Here is your password:",final_pw)
