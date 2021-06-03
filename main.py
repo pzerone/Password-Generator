@@ -14,7 +14,12 @@ symb_list = list('!@#$%^&*')
 
 while True:
 
-    pw_len = int(input("How long do you want your password to be?\nMin: 8\nMax: 50\n>"))
+    try:
+        pw_len = int(input("How long do you want your password to be?\nMin: 8\nMax: 50\n>"))
+
+    except ValueError:
+        print ("Not a valid number, try again\n")
+        continue
 
     if pw_len <= 7:
         print ("Password is going to be too short, try again!\n")
@@ -61,3 +66,4 @@ while True:
         print("Here is your password:",final_pw)
         
         break
+    
