@@ -1,6 +1,0 @@
-Version: 1.1
-
-
-  •Removed redundant code that imported ascii characters to a variable, now characters will directly be imported to a list
-  •Reordered code so that output of error handling segment is now relevantly outputted
-  •Added description for password generation code segment
