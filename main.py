@@ -1,6 +1,7 @@
 import string
 import random
 
+#hehehehe
 #Generates variables containing characters as list 
 
 low_list = list(string.ascii_lowercase)
